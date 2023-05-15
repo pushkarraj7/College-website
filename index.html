@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Link favicon in website -->
+    <link rel="icon" href="assests/img/logo.png" type="image/x-icon"> 
+    <title>Engineering College</title>
+    <!-- Internal styling -->
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+    }
+    
+    section {
+      display: flex;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    section div {
+      flex: 1;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #5e0707;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      color: #666;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    /* Styles for the About section */
+    .about-content {
+  display: flex;
+  flex-direction: column-reverse; /* Reverse the order of divs on small screens */
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about-us {
+  padding-left: 20px;
+  text-align: center;
+}
+
+.about-para {
+  text-align: justify;
+  padding-right: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+    /* Styles for the Department section */
+    #department {
+      background-color: #f9f9f9;
+    }
+    
+    #department ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    #department li {
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    /* Styles for the Faculty section */
+    #faculty {
+      background-color: #fff;
+      padding: 40px 40px;
+    }
+
+    #faculty .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    #faculty .row div {
+      flex: 1;
+    }
+    
+    #faculty .row ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #faculty .row ul li {
+      margin-bottom: 10px;
+      text-align: left;
+      padding-left: 100px;
+    }
+
+    
+    /* Styles for the Research section */
+    #research {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+    text-align: center;
+  }
+
+  #research div {
+    padding-right: 30px;
+    flex: 1;
+  }
+
+  #research img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #research ul {
+    text-align: center;
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #research ul li {
+    margin-bottom: 5px;
+  }
+
+  .research-columns {
+    display: flex;
+  }
+
+  .research-columns ul {
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .research-head{
+    font-weight: bold;
+    color: #721c1c;
+  }
+
+    /* Styles for the Placement section */
+    #placement {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 40px 40px;
+    }
+
+    #placement ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #placement ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .placement-head{
+    font-weight: bold;
+    color: #721c1c;
+  }
+    
+    /* Styles for the Contact section */
+    #contact {
+      background-color: #f9f9f9;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    #contact p {
+      margin-bottom: 10px;
+      text-align: left;
+      padding-left: 150px;
+    }
+    
+    #contact p:last-child {
+      margin-bottom: 0;
+    }
+
+    #contact a {
+      color: inherit; /* Inherit the color from the parent */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    #contact a:hover {
+      text-decoration: underline; /* Add underline on hover if desired */
+    }
+
+  </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#department">Department</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#placement">Placement</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <header></header>
+
+    <section id="about">
+      <div>
+        <img src="assests/img/bg.jpeg" alt="Image">
+      </div>
+      <div class="about-us">
+        <h2>About us</h2>
+        <p class="about-para">
+          The Birla Institute of Technology (BIT) Extension Centre in Deoghar is
+          a prominent educational institution located in Deoghar, Jharkhand,
+          India. It serves as an extension of the renowned Birla Institute of
+          Technology, Mesra, Ranchi. The center offers undergraduate and
+          postgraduate programs in various disciplines, including engineering,
+          management, and computer applications.
+        </p>
+        <br>
+        <p class="about-para">
+          It provides a conducive
+          learning environment with state-of-the-art facilities and experienced
+          faculty members. The BIT Extension Centre in Deoghar aims to impart
+          quality education and foster academic excellence, nurturing students'
+          skills and talents to prepare them for successful careers in their
+          respective fields. It also contributes to the socio-economic
+          development of the region by promoting education and research.
+        </p>
+        <!-- Rest of the content -->
+      </div>
+    </section>    
+
+    <section id="department">
+      <div>
+        <h2>Department</h2>
+        <ul>
+          <li>Department of Computer Science and Engineering
+            <p>This department focuses on the study and development of computer
+              systems and software. It offers courses in programming,
+              algorithms, database management, artificial intelligence, and
+              computer networks.</p>
+          </li>
+          <li>Department of Electrical and Electronics Engineering
+            <p>This department deals with the study of electrical systems,
+              electronics, and their applications. Students learn about power
+              systems, electrical machines, control systems, electronic devices,
+              and circuit design.</p>
+          </li> </ul>
+        <ul>
+          <li>Department of Electronics and Communication Engineering
+            <p>This department focuses on electronic devices, circuits, and
+              communication systems. Students learn about electronic circuits,
+              signal processing, wireless communication, digital communication,
+              and microwave engineering.</p>
+          </li>
+          <li>Department of Mechanical Engineering
+            <p>The department of Mechanical Engineering emphasizes the study of
+              machines, mechanics, and manufacturing processes. Students learn
+              about thermodynamics, fluid mechanics, solid mechanics, materials
+              science, and design engineering.</p>
+          </li> </ul>
+        <ul>
+          <li>Department of Civil Engineering
+            <p>This department deals with the design, construction, and
+              maintenance of infrastructure projects. Students learn about
+              structural engineering, geotechnical engineering, transportation
+              engineering, environmental engineering, and project management.</p>
+          </li>
+          <li>Department of Chemical Engineering
+            <p>The department of Chemical Engineering focuses on the study of
+              chemical processes, reactions, and plant operations. Students
+              learn about chemical kinetics, thermodynamics, process control,
+              separation processes, and chemical plant design.</p>
+          </li></ul>
+        <ul>
+          <li>Department of Production Engineering
+            <p>This department emphasizes the study of manufacturing processes,
+              production systems, and industrial automation. Students learn
+              about machine tools, materials handling, production planning,
+              quality control, and supply chain management.</p>
+          </li>
+          <li>Department of Information Technology
+            <p>This department focuses on the study and application of
+              information systems and technology in various domains. Students
+              learn about software development, database management, web
+              technologies, network security, and data analytics.</p>
+          </li>
+        </ul>
+        <ul>
+          <li>Department of Biotechnology
+            <p>The department of Biotechnology deals with the application of
+              biological processes and organisms in various fields. Students
+              learn about genetic engineering, bioprocess engineering,
+              bioinformatics, biomedical engineering, and pharmaceutical
+              technology.</p>
+          </li>
+          <li>Department of Management Studies
+            <p>This department offers courses in management and business
+              administration. Students learn about organizational behavior,
+              marketing management, financial management, human resource
+              management, and strategic management.</p>
+          </li>
+          <!-- Add more streams/branches here -->
+        </ul>
+      </div>
+      <!-- 
+      <div>
+        <img src="/path/to/image.jpg" alt="Image">
+      </div> -->
+    </section>
+
+    <section id="faculty">
+      <div class="row">
+        <div>
+          <img src="/assests/img/faculty.jpeg" alt="Image">
+        </div>
+        <div>
+          <h2>Faculty</h2>
+          <p>"Education is not the filling of a pail, but the lighting of a
+            fire."
+            - William Butler Yeats
+
+            This quote reflects the importance of the role played by faculty
+            members in igniting the passion for learning and inspiring students
+            to
+            explore and excel in their academic journey. It emphasizes that
+            education goes beyond the mere accumulation of knowledge, but rather
+            aims to ignite curiosity, critical thinking, and a lifelong love for
+            learning.</p>
+        </div>
+      </div>
+      <div class="row">
+        <ul>
+          <li>Prof. John Doe - Head of the Department (Computer Science)</li>
+          <li>Dr. Jane Smith - Assistant Professor (Electrical Engineering)</li>
+          <li>Prof. David Johnson - Associate Professor (Mechanical Engineering)</li>
+          <li>Dr. Sarah Brown - Professor (Civil Engineering)</li>
+          <li>Dr. Michael Wilson - Assistant Professor (Electronics and
+            Communication Engineering)</li>
+          <li>Prof. Emily Davis - Associate Professor (Chemical Engineering)</li>
+          <li>Dr. Robert Anderson - Professor (Information Technology)</li>
+          <li>Prof. Jessica Thompson - Assistant Professor (Metallurgical
+            Engineering)</li>
+          <li>Dr. Christopher Clark - Associate Professor (Biotechnology)</li>
+          <li>Prof. Olivia Taylor - Professor (Mining Engineering)</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="research">
+      <div>
+        <h2>Research</h2>
+        <p>The Birla Institute of Technology (BIT) Extension Centre in Deoghar
+          is committed to fostering a culture of research and innovation. Our
+          dedicated faculty and researchers engage in cutting-edge research
+          across various disciplines, addressing critical challenges and pushing
+          the boundaries of knowledge. With state-of-the-art research facilities
+          and collaborations with leading institutions and industries, we strive
+          to make significant contributions to the fields of science,
+          technology, and beyond.</p>
+        <p class="research-head">Our research areas include:</p>
+        <div class="research-columns">
+          <ul>
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Data Science and Analytics</li>
+          </ul>
+          <ul>
+            <li>Renewable Energy</li>
+            <li>Nanotechnology</li>
+            <li>Biomedical Engineering</li>
+          </ul>
+          <ul>
+            <li>Robotics</li>
+            <li>Environmental Science</li>
+            <li>Material Science</li>
+          </ul>
+        </div>
+        <p class="research-head">Through our research endeavors, we aim to contribute to the
+          advancement of knowledge, address societal challenges, and empower our
+          students with research-oriented skills and experiences.</p>
+      </div>
+      <div>
+        <img src="/assests/img/research.png" alt="Image">
+      </div>
+    </section>
+
+
+    <section id="placement">
+      <div>
+        <img src="/assests/img/placement.png" alt="Image"><br><br><br>
+        <p class="placement-head">Through our comprehensive placement
+          assistance, we strive to empower our students to achieve their career
+          goals and contribute to the growth and success of the industries they
+          join.</p>
+      </div>
+      <div>
+        <h2>Placement</h2>
+        <p>At the Birla Institute of Technology (BIT) Extension Centre in
+          Deoghar, we are dedicated to providing excellent placement
+          opportunities to our students. Our robust placement cell works closely
+          with industry partners to facilitate internships and job placements
+          for our graduates.</p>
+        <p class="placement-head">Key highlights of our placement process:</p>
+        <ul>
+          <li>Collaboration with leading companies in various industries</li>
+          <li>Pre-placement training programs to enhance students' employability
+            skills</li>
+          <li>Industry-focused curriculum to bridge the gap between academia and
+            industry requirements</li>
+          <li>Regular campus recruitment drives</li>
+        </ul>
+        <p class="placement-head">Our students have been successfully placed in
+          renowned companies such as:</p>
+          <ul>
+            <li>Microsoft</li>
+            <li>Google</li>
+            <li>Amazon</li>
+            <li>IBM</li>
+            <li>Intel</li><br>
+            <li>Apple</li>
+            <li>Tata Consultancy Services (TCS)</li>
+            <li>Infosys</li>
+            <li>Wipro</li>
+            <li>Accenture</li>
+          </ul>
+        <p class="placement-head">Here's what our alumni have to say about their
+          placement experiences:</p>
+        <ul>
+          <li>"The placement support provided by BIT Deoghar was exceptional. It
+            helped me secure a job at my dream company and kickstart my career."
+            - Shubhman, Batch of 2019</li>
+          <li>"I am grateful for the guidance and mentorship provided by the
+            faculty members, which played a crucial role in my successful
+            placement." - MSD, Batch of 2016</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <!-- <div>
+        <img src="/path/to/image.jpg" alt="Image">
+      </div> -->
+      <div style="display: flex; align-items: center;">
+        <h2 style="margin: 0 auto;">Contact Us</h2>
+      </div>
+      <div>
+        <p>Address: P O Ratanpur, Jasidih, Dist. Deoghar - 815142</p>
+        <p>Email: bitdeoghar@bitmesra.ac.in</p>
+        <p>Phone: Fax: 06432-292565, 9334654856/9308139037</p>
+        <p>Official Website: <a href="http://bitmesra.ac.in" target="_blank">http://bitmesra.ac.in</a></p>
+      </div>
+    </section>
+  </body>
+</html>
